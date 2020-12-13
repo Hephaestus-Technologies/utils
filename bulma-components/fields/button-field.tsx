@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 
 export class ButtonField extends React.Component {
 
@@ -30,7 +30,7 @@ export class ButtonField extends React.Component {
 
 }
 
-export const SubmitButtonField = (props) => {
+export const SubmitButtonField = (props): JSX.Element => {
     return <ButtonField className="is-fullwidth is-success" {...props}>
         Submit
     </ButtonField>

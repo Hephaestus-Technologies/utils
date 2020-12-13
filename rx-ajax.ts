@@ -1,6 +1,6 @@
 import {ajax} from "rxjs/ajax";
 import {map} from "rxjs/operators";
-import * as qs from "querystring";
+import * as qs from "query-string";
 import {Observable} from "rxjs";
 
 export const GET = <T>(url: string, params: {} = null): Observable<T> => {
