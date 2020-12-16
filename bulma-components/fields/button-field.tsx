@@ -1,8 +1,15 @@
 import * as React from "react";
 
+export interface ButtonFieldProps {
+    children: JSX.Element[],
+    isDisabled?: boolean,
+    className?: string,
+    onClick: (e: React.MouseEvent) => void
+}
+
 export class ButtonField extends React.Component {
 
-    public props: any = {};
+    public props: ButtonFieldProps;
 
     public render() {
         return (
